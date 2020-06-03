@@ -7,6 +7,14 @@
 * Microsoft.AspNetCore.Identity
 * Microsoft.AspNetCore
 
+## インストール方法
+
+NuGet でインストールできます。
+
+```
+Install-Package Soultech.BasicAuthentication
+```
+
 ## 使い方
 
 `Startup.cs`で以下のようにオプションを追加する
