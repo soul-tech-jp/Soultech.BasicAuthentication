@@ -1,5 +1,7 @@
 # ASP.NET Core BASIC認証ミドルウェア
 
+![.NET Core](https://github.com/soul-tech-jp/Soultech.BasicAuthentication/workflows/.NET%20Core/badge.svg)
+
 ## 依存関係
 
 * Microsoft.AspNetCore.Identity
