@@ -35,5 +35,4 @@ jobs:
       run: dotnet pack --configuration Release
     - name: Publish
       if: success()
-      run: dotnet nuget push bin/Release/Soultech.BasicAuthentication.*.nupkg --source "github"
-      
+      run: dotnet nuget push bin/Release/Soultech.BasicAuthentication.*.nupkg -k ${{secrets.NUGET_API_KEY}}
