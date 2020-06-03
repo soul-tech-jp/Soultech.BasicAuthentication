@@ -9,6 +9,10 @@
         <Description>Basic Authentication Middleware</Description>
         <Copyright>(c) 2020 SOULTECH CO.,LTD.</Copyright>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageProjectUrl>https://github.com/soul-tech-jp/Soultech.BasicAuthentication</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/soul-tech-jp/Soultech.BasicAuthentication</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>aspnetcore dotnet</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
