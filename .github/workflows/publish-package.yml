@@ -1,0 +1,39 @@
+name: .NET Core
+
+on:
+  push:
+    tags:
+      - v0.*
+      - v1*
+      - v2*
+      - v3*
+      - v4*
+      - v5*
+      - v6*
+      - v7*
+      - v8*
+      - v9*
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
+    - name: Pack
+      if: success()
+      run: dotnet pack --configuration Release
+    - name: Publish
+      if: success()
+      run: dotnet nuget push bin/Release/Soultech.BasicAuthentication.*.nupkg --source "github"
+      
