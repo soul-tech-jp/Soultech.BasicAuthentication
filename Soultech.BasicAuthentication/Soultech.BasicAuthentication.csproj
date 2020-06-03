@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <Nullable>enable</Nullable>
-        <PackageVersion>0.0.1</PackageVersion>
+        <PackageVersion>0.0.7</PackageVersion>
         <Title>Soultech.BasicAuthentication</Title>
         <Authors>SOULTECH CO.,LTD.</Authors>
         <Description>Basic Authentication Middleware</Description>
@@ -13,6 +13,8 @@
         <RepositoryUrl>https://github.com/soul-tech-jp/Soultech.BasicAuthentication</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>aspnetcore dotnet</PackageTags>
+        <AssemblyVersion>0.0.7</AssemblyVersion>
+        <FileVersion>0.0.7</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>
